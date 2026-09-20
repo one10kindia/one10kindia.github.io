@@ -1,0 +1,167 @@
+.route {
+  padding: 110px 0;
+  background: var(--c-black);
+}
+
+.route-head {
+  max-width: 640px;
+}
+
+.route-title {
+  margin-top: 12px;
+  font-size: clamp(32px, 4.2vw, 50px);
+  color: var(--c-white);
+}
+
+.route-sub {
+  margin-top: 18px;
+  font-size: 16.5px;
+  line-height: 1.65;
+  color: var(--c-text-on-dark-muted);
+}
+
+.route-map {
+  margin-top: 56px;
+  background: var(--c-black-soft);
+  border: 1px solid var(--c-border);
+  border-radius: var(--radius);
+  padding: 56px 40px 32px;
+}
+
+.route-line {
+  display: flex;
+  align-items: center;
+  gap: 0;
+}
+
+.route-marker {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--f-accent);
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  color: var(--c-text-on-dark-muted);
+  flex-shrink: 0;
+}
+
+.route-marker-dot {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--g-brand);
+  box-shadow: 0 0 0 6px rgba(111, 185, 44, 0.15);
+}
+
+.route-marker.finish .route-marker-dot {
+  background: var(--c-white);
+  box-shadow: 0 0 0 6px rgba(255, 255, 255, 0.12);
+}
+
+.route-progress {
+  flex: 1;
+  height: 3px;
+  margin: 0 10px;
+  background: repeating-linear-gradient(
+    90deg,
+    var(--c-green) 0,
+    var(--c-green) 14px,
+    transparent 14px,
+    transparent 24px
+  );
+  position: relative;
+}
+
+.route-progress::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, var(--c-green-light), transparent 85%);
+  opacity: 0.4;
+}
+
+.route-map-labels {
+  margin-top: 28px;
+  display: flex;
+  justify-content: space-between;
+  font-family: var(--f-accent);
+  font-size: 13px;
+  letter-spacing: 0.06em;
+  color: var(--c-text-on-dark-muted);
+  text-transform: uppercase;
+  border-top: 1px dashed var(--c-border);
+  padding-top: 18px;
+}
+
+.route-body {
+  margin-top: 56px;
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.route-features {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.route-feature {
+  display: flex;
+  gap: 18px;
+}
+
+.route-feature-mark {
+  flex-shrink: 0;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-top: 8px;
+  background: var(--g-brand);
+}
+
+.route-feature-title {
+  font-size: 20px;
+  color: var(--c-white);
+}
+
+.route-feature-copy {
+  margin-top: 6px;
+  font-size: 14.5px;
+  line-height: 1.6;
+  color: var(--c-text-on-dark-muted);
+  max-width: 420px;
+}
+
+.route-idea-card {
+  background: var(--c-black-soft);
+  border: 1px solid var(--c-border);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.route-idea-card img {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 900px) {
+  .route-body {
+    grid-template-columns: 1fr;
+  }
+  .route-map {
+    padding: 40px 22px 24px;
+  }
+}
+
+@media (max-width: 560px) {
+  .route {
+    padding: 76px 0;
+  }
+  .route-marker-text {
+    display: none;
+  }
+}

@@ -1,0 +1,41 @@
+.spcta {
+  padding: 120px 0;
+  background: var(--c-black);
+  text-align: center;
+}
+
+.spcta-inner {
+  max-width: 720px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.spcta-title {
+  margin-top: 14px;
+  font-size: clamp(32px, 5vw, 54px);
+  color: var(--c-white);
+}
+
+.spcta-sub {
+  margin-top: 20px;
+  font-size: 16.5px;
+  line-height: 1.65;
+  color: var(--c-text-on-dark-muted);
+  max-width: 520px;
+}
+
+.spcta-actions {
+  margin-top: 36px;
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+@media (max-width: 560px) {
+  .spcta {
+    padding: 80px 0;
+  }
+}

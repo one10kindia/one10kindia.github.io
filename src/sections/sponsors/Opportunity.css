@@ -1,0 +1,121 @@
+.opp {
+  padding: 100px 0;
+  background: var(--c-offwhite);
+}
+
+.opp .eyebrow {
+  color: var(--c-green-dark);
+}
+
+.opp-head {
+  max-width: 680px;
+}
+
+.opp-title {
+  margin-top: 12px;
+  font-size: clamp(30px, 4vw, 46px);
+  color: var(--c-text-on-light);
+}
+
+.opp-sub {
+  margin-top: 18px;
+  font-size: 16px;
+  line-height: 1.65;
+  color: var(--c-text-on-light-muted);
+}
+
+.opp-stats {
+  margin-top: 48px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.opp-stat {
+  background: var(--c-white);
+  border: 1px solid var(--c-border-light);
+  border-radius: var(--radius);
+  padding: 26px;
+  text-align: center;
+}
+
+.opp-stat-value {
+  display: block;
+  font-family: var(--f-display);
+  font-size: 36px;
+  color: var(--c-green-dark);
+}
+
+.opp-stat-label {
+  display: block;
+  margin-top: 6px;
+  font-family: var(--f-accent);
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--c-text-on-light-muted);
+}
+
+.opp-funnel {
+  margin-top: 56px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 14px;
+}
+
+.opp-step {
+  background: var(--c-black);
+  border-radius: var(--radius-sm);
+  padding: 22px 18px;
+}
+
+.opp-step-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.opp-step-head span {
+  font-family: var(--f-accent);
+  font-weight: 700;
+  font-size: 12px;
+  color: var(--c-green-light);
+}
+
+.opp-arrow {
+  font-style: normal;
+  color: var(--c-text-on-dark-muted);
+  font-size: 14px;
+}
+
+.opp-step h3 {
+  margin-top: 14px;
+  font-size: 18px;
+  color: var(--c-white);
+}
+
+.opp-step p {
+  margin-top: 6px;
+  font-size: 12.5px;
+  line-height: 1.5;
+  color: var(--c-text-on-dark-muted);
+}
+
+@media (max-width: 960px) {
+  .opp-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .opp-funnel {
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 16px;
+  }
+}
+
+@media (max-width: 560px) {
+  .opp {
+    padding: 72px 0;
+  }
+  .opp-funnel {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

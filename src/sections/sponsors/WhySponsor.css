@@ -1,0 +1,98 @@
+.whysp {
+  padding: 100px 0;
+  background: var(--c-offwhite);
+}
+
+.whysp .eyebrow {
+  color: var(--c-green-dark);
+}
+
+.whysp-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.whysp-title {
+  margin-top: 12px;
+  font-size: clamp(28px, 3.6vw, 40px);
+  color: var(--c-text-on-light);
+  text-transform: none;
+  max-width: 480px;
+}
+
+.whysp-list {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.whysp-list li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 15.5px;
+  color: var(--c-text-on-light);
+  font-weight: 500;
+}
+
+.whysp-check {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: var(--g-brand);
+  color: var(--c-black);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  flex-shrink: 0;
+}
+
+.whysp-quote {
+  background: var(--c-black);
+  border-radius: var(--radius);
+  padding: 48px 40px;
+}
+
+.whysp-quote-line {
+  font-family: var(--f-display);
+  font-size: clamp(30px, 3.4vw, 40px);
+  color: var(--c-white);
+  line-height: 1.08;
+}
+
+.whysp-quote-line.accent {
+  background: var(--g-brand-text);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.whysp-goal {
+  margin-top: 26px;
+  font-family: var(--f-accent);
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  font-size: 15px;
+  color: var(--c-text-on-dark-muted);
+  border-top: 1px solid var(--c-border);
+  padding-top: 22px;
+}
+
+@media (max-width: 900px) {
+  .whysp-inner {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 560px) {
+  .whysp {
+    padding: 72px 0;
+  }
+  .whysp-quote {
+    padding: 34px 26px;
+  }
+}
