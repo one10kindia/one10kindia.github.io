@@ -55,15 +55,13 @@ need to hardcode a `/repo-name/` base path.
 
 ## Custom domain (one10k.in)
 
-Not wired up yet by design — the site is published on the default
-`https://one10kindia.github.io/` URL for now. When ready to point
-`one10k.in` at it: add a `public/CNAME` file containing `one10k.in`, add the
-DNS records GitHub Pages asks for, then set the custom domain in
-**Settings → Pages**.
+Wired up via `public/CNAME`. DNS is managed at GoDaddy — see the repo's
+GitHub Pages settings for the current status of the domain and HTTPS
+certificate.
 
 ## Before going live — TODO
 
-- **Email capture** (`UpdatesCTA.jsx`): the "Notify Me" form is UI-only.
+- **Email capture** (in `Hero.jsx`): the "Notify Me" form is UI-only.
   Wire it to a real provider (Google Forms, Mailchimp, etc.) before launch.
 - **Social links**: Instagram/Strava are marked "coming soon" in the footer.
 - **Sponsor deck download**: `/assets/ONE10K_Bengaluru_Sponsor_Deck.pptx` is
