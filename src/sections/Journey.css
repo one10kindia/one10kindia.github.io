@@ -70,4 +70,18 @@
   .journey-track {
     grid-template-columns: repeat(2, 1fr);
   }
+  .journey-head {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .journey-step {
+    text-align: center;
+  }
+  .journey-step-top {
+    justify-content: center;
+  }
+  .journey-step-line {
+    display: none;
+  }
 }

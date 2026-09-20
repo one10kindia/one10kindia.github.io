@@ -94,5 +94,17 @@
   }
   .whysp-quote {
     padding: 34px 26px;
+    text-align: center;
+  }
+  .whysp-copy {
+    text-align: center;
+  }
+  .whysp-title {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .whysp-list {
+    width: fit-content;
+    margin: 30px auto 0;
   }
 }

@@ -102,4 +102,18 @@
   .tiers-grid {
     grid-template-columns: 1fr;
   }
+  .tiers-head {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .tier-card {
+    text-align: center;
+  }
+  .tiers-assets {
+    text-align: center;
+  }
+  .tiers-assets-tags {
+    justify-content: center;
+  }
 }

@@ -80,4 +80,27 @@
   .organisers {
     padding: 76px 0;
   }
+  .organisers-copy {
+    text-align: center;
+  }
+  .organisers-title,
+  .organisers-sub {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .organisers-copy blockquote {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0;
+    padding-top: 16px;
+    border-left: none;
+    border-top: 3px solid var(--c-green);
+  }
+  .organisers-stat {
+    text-align: center;
+  }
+  .organisers-stat-label {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }

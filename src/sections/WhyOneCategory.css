@@ -79,4 +79,12 @@
   .why-grid {
     grid-template-columns: 1fr;
   }
+  .why-head {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .why-card {
+    text-align: center;
+  }
 }

@@ -7,7 +7,6 @@ import RouteSection from '../sections/RouteSection.jsx';
 import Experience from '../sections/Experience.jsx';
 import Journey from '../sections/Journey.jsx';
 import Organisers from '../sections/Organisers.jsx';
-import UpdatesCTA from '../sections/UpdatesCTA.jsx';
 import { scrollToId } from '../components/SectionLink.jsx';
 
 export default function Home() {
@@ -33,7 +32,6 @@ export default function Home() {
       <Experience />
       <Journey />
       <Organisers />
-      <UpdatesCTA />
     </main>
   );
 }

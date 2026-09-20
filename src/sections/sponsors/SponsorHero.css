@@ -55,6 +55,20 @@
   }
 }
 
+@media (max-width: 720px) {
+  .sp-hero-copy {
+    text-align: center;
+  }
+  .sp-hero-title,
+  .sp-hero-sub {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .sp-hero-actions {
+    justify-content: center;
+  }
+}
+
 @media (max-width: 480px) {
   .sp-hero {
     padding-top: calc(var(--nav-height) + 36px);

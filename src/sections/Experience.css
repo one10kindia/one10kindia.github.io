@@ -114,4 +114,12 @@
   .experience-card.wide {
     grid-column: span 1;
   }
+  .experience-head {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .experience-note {
+    text-align: center;
+  }
 }

@@ -143,4 +143,20 @@
   .event-theme {
     padding: 28px;
   }
+  .event-head {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .event-not-tags {
+    justify-content: center;
+  }
+  .event-not,
+  .event-theme {
+    text-align: center;
+  }
+  .event-theme-copy {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
